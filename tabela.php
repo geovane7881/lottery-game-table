@@ -1,7 +1,13 @@
 <?php
 
-$numeros_1 = $_POST['numeros_1'];
-$numeros_2 = $_POST['numeros_2'];
+$numeros_1 = addslashes($_POST['numeros_1']);
+$numeros_2 = addslashes($_POST['numeros_2']);
+
+$tamanho = count(explode(',', $numeros_1)) ==  20 && count(explode(',', $numeros_2)) == 20 ? true : false;
+
+    if(!$tamanho) {
+        header('location: index.php');
+    } 
 
 ?>
 
@@ -16,7 +22,6 @@ $numeros_2 = $_POST['numeros_2'];
 
         <script type="text/javascript">
 
-            
             var numeros_1 = '<?php echo $numeros_1 ?>'.split(',');
             var numeros_2 = '<?php echo $numeros_2 ?>'.split(',');
             

@@ -1,12 +1,53 @@
+html {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
 *, *:before, *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+            
+}
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    background-color: #ff6666;
+    color: #4d4d4d;
+    font-size: 50px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+form {
+    margin: auto;
+    width: 50%;
+    border: 2px solid #CCC;
+    padding: 10px;
+}
+
+form label {
+    font-size: 50px;
+}
+form input {
+    height: 50px;
+    width: 100%;
+    font-size: 25px;
+}
+#btn_submit {
+    font-size: 25px;
+    height: 50px;
 }
 
 table {
-    display: inline;
-    margin-left: 60px;
+    float: left;
+    padding-left: 50px;
+    margin: auto;
 }
 
 table th {
@@ -18,14 +59,16 @@ table th {
 
 table * {
     background-color: #ccc;
+    width: 100px;
     height: 100px;
-    font-size: 50px;
-    padding-left: 25px;
-    padding-right: 25px;
-    
+    max-width: 100px;
+    max-height: 100px;
+    min-width: 100px;
+    min-height: 100px;
+    font-size: 40px;
 }
 
-#btn_limpar{
+#btn_limpar {
     margin-left: 60px;
     margin-top: 30px;
     font-size: 25px;

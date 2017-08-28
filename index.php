@@ -14,16 +14,14 @@
 
     <body>
         <h1>Preenchimento dos Números</h1>
+        
         <form method="post" action="tabela.php">
             <label>
-                Digite os números da cartela 1: 
+                Primeira Cartela: <br/>
                 <input type="text" id="numeros_1" name="numeros_1">
-            </label>
-
-            <br><br><br>
-            
+            </label><br>
             <label>
-                Digite os números da cartela 2: 
+                Segunda Cartela: <br/>
                 <input type="text" id="numeros_2" name="numeros_2">
             </label>
             
